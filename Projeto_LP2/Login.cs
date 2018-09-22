@@ -58,7 +58,7 @@ namespace Projeto_LP2
             var login = "renan";
             var senha = "fuckthepolice";
 
-            if(true)
+            if(userCampo.Text == login && senhaCampo.Text == senha)
             {
                 this.Hide();
                 var lol = new Atividades_Usuarios();
