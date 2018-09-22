@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Projeto_LP2
+{
+    public partial class Controle_e_Visualização_com_Tipo : Form
+    {
+        public Controle_e_Visualização_com_Tipo()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_AddControlView_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstViewControleTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
