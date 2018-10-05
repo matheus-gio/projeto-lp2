@@ -66,5 +66,10 @@ namespace Projeto_LP2
         {
 
         }
+
+        private void btn_SairCadastro_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

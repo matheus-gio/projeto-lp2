@@ -101,6 +101,18 @@
     <Compile Include="Controle e Visualização.Designer.cs">
       <DependentUpon>Controle e Visualização.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditarIndicadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarIndicadores.Designer.cs">
+      <DependentUpon>EditarIndicadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarItem.Designer.cs">
+      <DependentUpon>EditarItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Indicadores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,14 +143,26 @@
     <Compile Include="Nova Relação Entre Itens Indicadores.Designer.cs">
       <DependentUpon>Nova Relação Entre Itens Indicadores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Novos Projetos.cs">
+    <Compile Include="NovosProjetos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Novos Projetos.Designer.cs">
-      <DependentUpon>Novos Projetos.cs</DependentUpon>
+    <Compile Include="NovosProjetos.Designer.cs">
+      <DependentUpon>NovosProjetos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relação_item_indicador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relação_item_indicador.Designer.cs">
+      <DependentUpon>Relação_item_indicador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelecionarIndicador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelecionarIndicador.Designer.cs">
+      <DependentUpon>SelecionarIndicador.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Atividades Usuarios.resx">
       <DependentUpon>Atividades Usuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +181,12 @@
     <EmbeddedResource Include="Controle e Visualização.resx">
       <DependentUpon>Controle e Visualização.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditarIndicadores.resx">
+      <DependentUpon>EditarIndicadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarItem.resx">
+      <DependentUpon>EditarItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Indicadores.resx">
       <DependentUpon>Indicadores.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,8 +202,8 @@
     <EmbeddedResource Include="Nova Relação Entre Itens Indicadores.resx">
       <DependentUpon>Nova Relação Entre Itens Indicadores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Novos Projetos.resx">
-      <DependentUpon>Novos Projetos.cs</DependentUpon>
+    <EmbeddedResource Include="NovosProjetos.resx">
+      <DependentUpon>NovosProjetos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -185,6 +215,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Relação_item_indicador.resx">
+      <DependentUpon>Relação_item_indicador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelecionarIndicador.resx">
+      <DependentUpon>SelecionarIndicador.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

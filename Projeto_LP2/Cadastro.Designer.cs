@@ -156,6 +156,7 @@
             this.btn_SairCadastro.TabIndex = 12;
             this.btn_SairCadastro.Text = "Sair";
             this.btn_SairCadastro.UseVisualStyleBackColor = true;
+            this.btn_SairCadastro.Click += new System.EventHandler(this.btn_SairCadastro_Click);
             // 
             // pictureBox1
             // 

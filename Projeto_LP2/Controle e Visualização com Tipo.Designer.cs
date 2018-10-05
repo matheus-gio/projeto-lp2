@@ -38,6 +38,10 @@
             this.btn_EditarControlView = new System.Windows.Forms.Button();
             this.btn_AddControlView = new System.Windows.Forms.Button();
             this.btn_DeletarControlView = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstViewControleTipo
@@ -51,9 +55,9 @@
             this.lstViewControleTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstViewControleTipo.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lstViewControleTipo.GridLines = true;
-            this.lstViewControleTipo.Location = new System.Drawing.Point(12, 12);
+            this.lstViewControleTipo.Location = new System.Drawing.Point(12, 41);
             this.lstViewControleTipo.Name = "lstViewControleTipo";
-            this.lstViewControleTipo.Size = new System.Drawing.Size(438, 249);
+            this.lstViewControleTipo.Size = new System.Drawing.Size(661, 235);
             this.lstViewControleTipo.TabIndex = 1;
             this.lstViewControleTipo.UseCompatibleStateImageBehavior = false;
             this.lstViewControleTipo.View = System.Windows.Forms.View.Details;
@@ -93,6 +97,7 @@
             this.btn_RelacaoControlView.TabIndex = 38;
             this.btn_RelacaoControlView.Text = "Relação";
             this.btn_RelacaoControlView.UseVisualStyleBackColor = true;
+            this.btn_RelacaoControlView.Click += new System.EventHandler(this.btn_RelacaoControlView_Click);
             // 
             // btn_EditarControlView
             // 
@@ -103,6 +108,7 @@
             this.btn_EditarControlView.TabIndex = 37;
             this.btn_EditarControlView.Text = "Editar";
             this.btn_EditarControlView.UseVisualStyleBackColor = true;
+            this.btn_EditarControlView.Click += new System.EventHandler(this.btn_EditarControlView_Click);
             // 
             // btn_AddControlView
             // 
@@ -125,11 +131,54 @@
             this.btn_DeletarControlView.Text = "Deletar";
             this.btn_DeletarControlView.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(456, 283);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 35);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Selecionar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(567, 282);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 35);
+            this.button2.TabIndex = 40;
+            this.button2.Text = "Sair";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(549, 20);
+            this.textBox1.TabIndex = 41;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(565, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 23);
+            this.button3.TabIndex = 42;
+            this.button3.Text = "Pesquisar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Controle_e_Visualização_com_Tipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 329);
+            this.ClientSize = new System.Drawing.Size(685, 330);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_RelacaoControlView);
             this.Controls.Add(this.btn_EditarControlView);
             this.Controls.Add(this.btn_AddControlView);
@@ -139,6 +188,7 @@
             this.Name = "Controle_e_Visualização_com_Tipo";
             this.Text = "Controle e Visualização Tipo";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -153,5 +203,9 @@
         private System.Windows.Forms.Button btn_EditarControlView;
         private System.Windows.Forms.Button btn_AddControlView;
         private System.Windows.Forms.Button btn_DeletarControlView;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button3;
     }
 }

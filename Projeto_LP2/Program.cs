@@ -18,7 +18,7 @@ namespace Projeto_LP2
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Cadastro());
+            Application.Run(new Login());
 
         }
     }
