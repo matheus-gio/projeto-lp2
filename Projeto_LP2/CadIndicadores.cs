@@ -54,12 +54,14 @@ namespace Projeto_LP2
 
         private void btn_OKCadIndicadores_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Nada a fazer ainda");
         }
 
         private void btn_CancelarCadIndicadores_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var lol = new Controle_e_Visualização_com_Tipo();
+            lol.ShowDialog();
         }
 
         private void txt_NomeCadIndicadores_TextChanged(object sender, EventArgs e)

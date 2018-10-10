@@ -44,6 +44,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_UsuarioCadastro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.lblVerificaNome = new System.Windows.Forms.Label();
+            this.lblVerificaSobrenome = new System.Windows.Forms.Label();
+            this.lblVerificaUsuario = new System.Windows.Forms.Label();
+            this.lblVerificaEmail = new System.Windows.Forms.Label();
+            this.lblVerificiaSenha = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,13 +119,14 @@
             this.txt_SobrenomeCadastro.Name = "txt_SobrenomeCadastro";
             this.txt_SobrenomeCadastro.Size = new System.Drawing.Size(195, 20);
             this.txt_SobrenomeCadastro.TabIndex = 6;
+            this.txt_SobrenomeCadastro.TextChanged += new System.EventHandler(this.txt_SobrenomeCadastro_TextChanged);
             // 
             // txt_EmailCadastro
             // 
             this.txt_EmailCadastro.Location = new System.Drawing.Point(82, 229);
             this.txt_EmailCadastro.Name = "txt_EmailCadastro";
             this.txt_EmailCadastro.Size = new System.Drawing.Size(262, 20);
-            this.txt_EmailCadastro.TabIndex = 7;
+            this.txt_EmailCadastro.TabIndex = 8;
             this.txt_EmailCadastro.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txt_SenhaCadastro
@@ -128,7 +134,8 @@
             this.txt_SenhaCadastro.Location = new System.Drawing.Point(82, 311);
             this.txt_SenhaCadastro.Name = "txt_SenhaCadastro";
             this.txt_SenhaCadastro.Size = new System.Drawing.Size(195, 20);
-            this.txt_SenhaCadastro.TabIndex = 8;
+            this.txt_SenhaCadastro.TabIndex = 9;
+            this.txt_SenhaCadastro.UseSystemPasswordChar = true;
             this.txt_SenhaCadastro.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // txt_ConfirmeSenhaCadastro
@@ -136,7 +143,8 @@
             this.txt_ConfirmeSenhaCadastro.Location = new System.Drawing.Point(340, 311);
             this.txt_ConfirmeSenhaCadastro.Name = "txt_ConfirmeSenhaCadastro";
             this.txt_ConfirmeSenhaCadastro.Size = new System.Drawing.Size(195, 20);
-            this.txt_ConfirmeSenhaCadastro.TabIndex = 9;
+            this.txt_ConfirmeSenhaCadastro.TabIndex = 10;
+            this.txt_ConfirmeSenhaCadastro.UseSystemPasswordChar = true;
             this.txt_ConfirmeSenhaCadastro.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // btn_CadastrarCadastro
@@ -147,6 +155,7 @@
             this.btn_CadastrarCadastro.TabIndex = 11;
             this.btn_CadastrarCadastro.Text = "Cadastrar";
             this.btn_CadastrarCadastro.UseVisualStyleBackColor = true;
+            this.btn_CadastrarCadastro.Click += new System.EventHandler(this.btn_CadastrarCadastro_Click);
             // 
             // btn_SairCadastro
             // 
@@ -156,6 +165,7 @@
             this.btn_SairCadastro.TabIndex = 12;
             this.btn_SairCadastro.Text = "Sair";
             this.btn_SairCadastro.UseVisualStyleBackColor = true;
+            this.btn_SairCadastro.Click += new System.EventHandler(this.btn_SairCadastro_Click);
             // 
             // pictureBox1
             // 
@@ -172,7 +182,7 @@
             this.txt_UsuarioCadastro.Location = new System.Drawing.Point(82, 166);
             this.txt_UsuarioCadastro.Name = "txt_UsuarioCadastro";
             this.txt_UsuarioCadastro.Size = new System.Drawing.Size(262, 20);
-            this.txt_UsuarioCadastro.TabIndex = 15;
+            this.txt_UsuarioCadastro.TabIndex = 7;
             this.txt_UsuarioCadastro.TextChanged += new System.EventHandler(this.txt_UsuarioCadastro_TextChanged);
             // 
             // label6
@@ -186,11 +196,71 @@
             this.label6.Text = "Usuario";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // lblVerificaNome
+            // 
+            this.lblVerificaNome.AutoSize = true;
+            this.lblVerificaNome.ForeColor = System.Drawing.Color.Red;
+            this.lblVerificaNome.Location = new System.Drawing.Point(79, 122);
+            this.lblVerificaNome.Name = "lblVerificaNome";
+            this.lblVerificaNome.Size = new System.Drawing.Size(83, 13);
+            this.lblVerificaNome.TabIndex = 16;
+            this.lblVerificaNome.Text = "Usuario Invalido";
+            this.lblVerificaNome.Visible = false;
+            // 
+            // lblVerificaSobrenome
+            // 
+            this.lblVerificaSobrenome.AutoSize = true;
+            this.lblVerificaSobrenome.ForeColor = System.Drawing.Color.Red;
+            this.lblVerificaSobrenome.Location = new System.Drawing.Point(337, 126);
+            this.lblVerificaSobrenome.Name = "lblVerificaSobrenome";
+            this.lblVerificaSobrenome.Size = new System.Drawing.Size(101, 13);
+            this.lblVerificaSobrenome.TabIndex = 17;
+            this.lblVerificaSobrenome.Text = "Sobrenome Invalido";
+            this.lblVerificaSobrenome.Visible = false;
+            // 
+            // lblVerificaUsuario
+            // 
+            this.lblVerificaUsuario.AutoSize = true;
+            this.lblVerificaUsuario.ForeColor = System.Drawing.Color.Red;
+            this.lblVerificaUsuario.Location = new System.Drawing.Point(219, 189);
+            this.lblVerificaUsuario.Name = "lblVerificaUsuario";
+            this.lblVerificaUsuario.Size = new System.Drawing.Size(83, 13);
+            this.lblVerificaUsuario.TabIndex = 18;
+            this.lblVerificaUsuario.Text = "Usuário Inválido";
+            this.lblVerificaUsuario.Visible = false;
+            // 
+            // lblVerificaEmail
+            // 
+            this.lblVerificaEmail.AutoSize = true;
+            this.lblVerificaEmail.ForeColor = System.Drawing.Color.Red;
+            this.lblVerificaEmail.Location = new System.Drawing.Point(79, 252);
+            this.lblVerificaEmail.Name = "lblVerificaEmail";
+            this.lblVerificaEmail.Size = new System.Drawing.Size(75, 13);
+            this.lblVerificaEmail.TabIndex = 19;
+            this.lblVerificaEmail.Text = "E-mail Inválido";
+            this.lblVerificaEmail.Visible = false;
+            // 
+            // lblVerificiaSenha
+            // 
+            this.lblVerificiaSenha.AutoSize = true;
+            this.lblVerificiaSenha.ForeColor = System.Drawing.Color.Red;
+            this.lblVerificiaSenha.Location = new System.Drawing.Point(337, 334);
+            this.lblVerificiaSenha.Name = "lblVerificiaSenha";
+            this.lblVerificiaSenha.Size = new System.Drawing.Size(121, 13);
+            this.lblVerificiaSenha.TabIndex = 20;
+            this.lblVerificiaSenha.Text = "Senha não corresponde";
+            this.lblVerificiaSenha.Visible = false;
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 445);
+            this.Controls.Add(this.lblVerificiaSenha);
+            this.Controls.Add(this.lblVerificaEmail);
+            this.Controls.Add(this.lblVerificaUsuario);
+            this.Controls.Add(this.lblVerificaSobrenome);
+            this.Controls.Add(this.lblVerificaNome);
             this.Controls.Add(this.txt_UsuarioCadastro);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
@@ -232,5 +302,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txt_UsuarioCadastro;
         private System.Windows.Forms.Label label6;
+        protected internal System.Windows.Forms.Label lblVerificaNome;
+        private System.Windows.Forms.Label lblVerificaSobrenome;
+        private System.Windows.Forms.Label lblVerificaUsuario;
+        private System.Windows.Forms.Label lblVerificaEmail;
+        private System.Windows.Forms.Label lblVerificiaSenha;
     }
 }

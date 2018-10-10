@@ -24,10 +24,7 @@ namespace Projeto_LP2
 
         private void btn_OKCadIndicadores_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            var lol = new Atividades_Usuarios();
-
-            lol.ShowDialog();
+            
         }
 
         private void txt_ObsCadIndicadores_TextChanged(object sender, EventArgs e)
@@ -62,7 +59,9 @@ namespace Projeto_LP2
 
         private void btn_CancelarCadIndicadores_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var qualquer = new ControleVisualização();
+            qualquer.ShowDialog();
         }
 
         private void lbl_CodigoCadIndicadores_Click(object sender, EventArgs e)

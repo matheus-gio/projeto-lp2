@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.Common;
 
 namespace Projeto_LP2
 {
@@ -55,8 +54,8 @@ namespace Projeto_LP2
 
         private void enter_Click(object sender, EventArgs e)
         {
-            var login = "renan";
-            var senha = "fuckthepolice";
+            var login = "1";
+            var senha = "1";
 
             if(userCampo.Text == login && senhaCampo.Text == senha)
             {
