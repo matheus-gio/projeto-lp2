@@ -124,7 +124,9 @@ namespace Projeto_LP2
 
         private void btn_SairCadastro_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            Login Tela_Login = new Login();
+            Tela_Login.ShowDialog();
         }
 
         private void txt_SobrenomeCadastro_TextChanged(object sender, EventArgs e)
@@ -168,7 +170,10 @@ namespace Projeto_LP2
                         txt_SobrenomeCadastro.Text = null;
                         txt_UsuarioCadastro.Text = null;
                 }else{
-                    Application.Exit();
+                    
+                    Login Tela_Login = new Login();
+                    
+                    Tela_Login.ShowDialog();
                 }
             }
             }

@@ -67,19 +67,15 @@ namespace Projeto_LP2
             else
             {
                 erroLogin.Show();
-            }
-
-
-            
-            
+            }   
         }
 
         private void cadastro_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             var nova_janela = new Cadastro();
             nova_janela.ShowDialog();
-
+            
         }
     }
 }

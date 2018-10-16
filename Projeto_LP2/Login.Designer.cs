@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_CadastreLogin = new System.Windows.Forms.Button();
             this.erroLogin = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,12 +132,23 @@
             this.erroLogin.Text = "user = 1 / senha = 1";
             this.erroLogin.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(305, 305);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Opção Desabilitada";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(506, 361);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.erroLogin);
             this.Controls.Add(this.txt_CadastreLogin);
             this.Controls.Add(this.pictureBox1);
@@ -166,5 +178,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button txt_CadastreLogin;
         private System.Windows.Forms.Label erroLogin;
+        private System.Windows.Forms.Label label1;
     }
 }

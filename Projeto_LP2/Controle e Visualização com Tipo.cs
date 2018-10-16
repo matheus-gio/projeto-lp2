@@ -52,7 +52,9 @@ namespace Projeto_LP2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Atividades_Usuarios Window = new Atividades_Usuarios();
+            Window.ShowDialog();
         }
     }
 }

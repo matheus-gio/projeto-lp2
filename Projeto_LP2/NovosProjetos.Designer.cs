@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,6 +39,8 @@
             this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Propriedade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.removerPropriedade = new System.Windows.Forms.Button();
+            this.btn_NP_Voltar = new System.Windows.Forms.Button();
+            this.Nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -98,7 +100,7 @@
             this.comboBox.Items.AddRange(new object[] {
             "GPS",
             "Threads",
-            "Bando de dados"});
+            "Banco de dados"});
             this.comboBox.Location = new System.Drawing.Point(76, 137);
             this.comboBox.Name = "comboBox";
             this.comboBox.Size = new System.Drawing.Size(235, 21);
@@ -109,14 +111,15 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ID,
-            this.Propriedade});
-            listViewGroup6.Header = "ListViewGroup";
-            listViewGroup6.Name = "listViewGroup1";
+            this.Propriedade,
+            this.Nome});
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "listViewGroup1";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup6});
+            listViewGroup1});
             this.listView1.Location = new System.Drawing.Point(76, 194);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(236, 205);
+            this.listView1.Size = new System.Drawing.Size(256, 205);
             this.listView1.TabIndex = 11;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -130,7 +133,7 @@
             // Propriedade
             // 
             this.Propriedade.Text = "Propriedade";
-            this.Propriedade.Width = 196;
+            this.Propriedade.Width = 100;
             // 
             // removerPropriedade
             // 
@@ -142,11 +145,26 @@
             this.removerPropriedade.UseVisualStyleBackColor = true;
             this.removerPropriedade.Click += new System.EventHandler(this.remover_click);
             // 
+            // btn_NP_Voltar
+            // 
+            this.btn_NP_Voltar.Location = new System.Drawing.Point(482, 373);
+            this.btn_NP_Voltar.Name = "btn_NP_Voltar";
+            this.btn_NP_Voltar.Size = new System.Drawing.Size(63, 23);
+            this.btn_NP_Voltar.TabIndex = 13;
+            this.btn_NP_Voltar.Text = "Voltar";
+            this.btn_NP_Voltar.UseVisualStyleBackColor = true;
+            this.btn_NP_Voltar.Click += new System.EventHandler(this.btn_NP_Voltar_Click);
+            // 
+            // Nome
+            // 
+            this.Nome.Text = "Nome";
+            // 
             // Novos_Projetos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 424);
+            this.Controls.Add(this.btn_NP_Voltar);
             this.Controls.Add(this.removerPropriedade);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.comboBox);
@@ -174,5 +192,7 @@
         private System.Windows.Forms.ColumnHeader ID;
         private System.Windows.Forms.ColumnHeader Propriedade;
         private System.Windows.Forms.Button removerPropriedade;
+        private System.Windows.Forms.Button btn_NP_Voltar;
+        private System.Windows.Forms.ColumnHeader Nome;
     }
 }
